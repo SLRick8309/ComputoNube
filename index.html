@@ -54,7 +54,7 @@
             text-rendering: optimizeLegibility;
         }
         
-        /* Navbar Sólida (Sin efectos borrosos) */
+        /* Navbar Sólida */
         .solid-nav {
             background-color: #ffffff;
             border-bottom: 1px solid #e2e8f0;
@@ -62,7 +62,6 @@
 
         .gradient-text {
             background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -155,7 +154,7 @@
                         <span class="gradient-text">Sin Fricción.</span>
                     </h1>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg border-l-4 border-brand-200 pl-4">
-                        Modernizamos tu arquitectura tecnológica. Migración a Azure, desarrollo de software escalable y seguridad de grado militar para empresas exigentes.
+                        Modernizamos tu arquitectura tecnológica. Migración a la nube, desarrollo de software escalable y seguridad de grado militar para empresas exigentes.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#contacto" class="px-8 py-3.5 bg-brand-700 text-white rounded-md font-semibold hover:bg-brand-800 transition shadow-clean flex items-center justify-center gap-2">
@@ -199,10 +198,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Tarjeta Flotante -->
+                    <!-- Tarjeta Flotante (Marca Genérica) -->
                     <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-sharp border border-slate-100 flex items-center gap-4 animate-bounce" style="animation-duration: 4s;">
                         <div class="w-10 h-10 bg-brand-600 rounded flex items-center justify-center text-white">
-                            <i class="fa-brands fa-microsoft"></i>
+                            <i class="fa-solid fa-certificate"></i>
                         </div>
                         <div>
                             <p class="text-xs text-slate-500 font-semibold uppercase">Partner</p>
@@ -214,15 +213,15 @@
         </div>
     </section>
 
-    <!-- Logo Strip (Nuevo: Autoridad) -->
+    <!-- Logo Strip (Marcas Genéricas para evitar filtros) -->
     <section class="py-8 bg-slate-50 border-y border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p class="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">Confían en nosotros</p>
             <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-brands fa-aws text-2xl"></i> Amazon</div>
-                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-brands fa-google text-2xl"></i> Google</div>
-                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-brands fa-microsoft text-2xl"></i> Microsoft</div>
-                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-brands fa-stripe text-2xl"></i> Stripe</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-solid fa-layer-group text-2xl"></i> Tech Corp</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-solid fa-globe text-2xl"></i> Global Net</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-solid fa-server text-2xl"></i> Data Systems</div>
+                <div class="flex items-center gap-2 text-xl font-bold text-slate-600"><i class="fa-solid fa-wallet text-2xl"></i> PaySafe</div>
             </div>
         </div>
     </section>
@@ -242,7 +241,7 @@
                     <div class="w-12 h-12 bg-brand-900 rounded-md flex items-center justify-center text-white text-xl mb-6 shadow-sm group-hover:bg-brand-700 transition-colors">
                         <i class="fa-solid fa-cloud"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 mb-3">Azure Cloud Solutions</h3>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Infraestructura Cloud</h3>
                     <p class="text-slate-600 text-sm leading-relaxed mb-6">
                         Migración, arquitectura y gestión de entornos en la nube. Optimizamos costos y maximizamos la disponibilidad de sus servicios.
                     </p>
@@ -442,7 +441,6 @@
     </button>
 
     <!-- Modal de Notificación -->
-    <!-- FIX CRÍTICO: Clase 'hidden' agregada y 'backdrop-blur' eliminado -->
     <div id="notification-modal" class="fixed inset-0 hidden items-center justify-center z-[100]">
         <div class="absolute inset-0 bg-slate-900/50 transition-opacity" id="modal-backdrop"></div>
         <div class="bg-white rounded-lg p-8 shadow-2xl relative z-10 max-w-sm w-full mx-4 text-center transform transition-all scale-95 opacity-0" id="modal-content">
